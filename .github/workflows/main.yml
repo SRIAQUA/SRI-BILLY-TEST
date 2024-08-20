@@ -51,7 +51,7 @@ jobs:
           nohup python3 ./app.py &
       - name: Wait for server (sleep 5 secs)
         run: |
-          sleep 5
+          sleep 180
       - name: Run DVGA Tests
         run: |
           python3 -m pytest tests/*
