@@ -39,6 +39,8 @@ jobs:
         with:
           aqua-key: ${{ secrets.AQUA_KEY }}
           aqua-secret: ${{ secrets.AQUA_SECRET }}
+        run: |
+          sleep 10000000000
  
       - uses: actions/setup-python@v4
         with:
