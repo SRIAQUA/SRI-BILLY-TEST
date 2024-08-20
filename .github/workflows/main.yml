@@ -72,7 +72,7 @@ jobs:
           BINDIR="." sh install.sh
           rm install.sh install.sh.checksum
           ./billy generate \
-            --access-token "${{ secrets.GITHUB_TOKEN }}" \
+            --access-token "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" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
             --artifact-path "$GITHUB_REPOSITORY:$GITHUB_RUN_NUMBER"
