@@ -39,6 +39,7 @@ jobs:
         with:
           aqua-key: ${{ secrets.AQUA_KEY }}
           aqua-secret: ${{ secrets.AQUA_SECRET }}
+          timeout-minutes: 5
  
       - uses: actions/setup-python@v4
         with:
