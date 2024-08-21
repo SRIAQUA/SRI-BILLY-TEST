@@ -32,6 +32,15 @@ jobs:
     runs-on: ubuntu-20.04
     needs: scan
     steps:
+      - uses: actions/checkout@v3
+      - name: Setup pipeline enforcer
+        uses: aquasecurity/pipeline-enforcer-action@main
+        with:
+          aqua-key: ${{ secrets.AQUA_KEY }}
+          aqua-secret: ${{ secrets.AQUA_SECRET }}
+          CSPM_URL: https://eu-1.api.cloudsploit.com
+          AQUA_URL: https://api.eu-1.supply-chain.cloud.aquasec.com
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.6'
