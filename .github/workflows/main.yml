@@ -75,6 +75,4 @@ jobs:
             --access-token "${{ secrets.GITHUB_TOKEN }}" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
-            --AQUA_URL https://api.eu-1.supply-chain.cloud.aquasec.com
-            --CSPM_URL https://eu-1.api.cloudsploit.com
             --artifact-path "$GITHUB_REPOSITORY:$GITHUB_RUN_NUMBER"
